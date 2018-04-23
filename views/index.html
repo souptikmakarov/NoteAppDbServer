@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>NoteAppDbServer HomePage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <section class='container'>
+      <hgroup>
+        <h1>The server is up and running</h1>
+      </hgroup>
+      <% if (dbstatus == "Connected") { %>
+        <div class="alert alert-success">
+          <span>Database Connection Status: <%=dbstatus%></span>
+        </div>
+      <% } else { %>
+        <div class="alert alert-danger">
+          <span>Database Connection Status: <%=dbstatus%></span>
+        </div>
+      <%} %>
+    </section>
+  </body>
+</html>
