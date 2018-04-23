@@ -6,7 +6,8 @@ var morgan  = require('morgan');
 // var db = monk('mongodb://localhost:27017/testproject');
 
 var mongoURL = "mongodb://makarov:makarov007@ds255319.mlab.com:55319/notedb";
-var port = 3000;
+// var port = 3000;
+var port = Number(process.env.PORT || 3000);
 var db = monk(mongoURL);
 const collectionName = 'documents';
 
