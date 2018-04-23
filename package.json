@@ -7,7 +7,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index1.js"
+    "start": "node index.js"
   },
   "author": "Makarov",
   "license": "ISC",
